@@ -173,3 +173,23 @@ p { margin: 0 0 1rem; }
 /* Footer */
 .site-footer { border-top: 1px solid var(--line); padding: 2rem 0 2.5rem; text-align: center; color: var(--muted); font-size: .9rem; }
 .site-footer p { margin: 0; }
+
+/* Custom Songs (draft) */
+.occasion-list { list-style: none; margin: 0 0 1.5rem; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+.occasion-list li { background: var(--card-2); border: 1px solid var(--line); border-radius: 999px; padding: .3rem .8rem; font-size: .9rem; font-weight: 600; color: var(--muted); }
+.tier-grid { display: grid; gap: 1.25rem; margin-bottom: 1.5rem; }
+@media (min-width: 820px) { .tier-grid { grid-template-columns: repeat(3, 1fr); } }
+.tier { padding: 1.25rem; position: relative; overflow: hidden; }
+.tier::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 4px; background: var(--teal); }
+.tier-featured { border-color: var(--violet); } .tier-featured::before { background: var(--violet); }
+.tier .price { font-size: 2rem; font-weight: 800; margin: .25rem 0 .75rem; }
+.tier ul, .order-box ol { margin: 0; padding-left: 1.2rem; color: var(--muted); }
+.order-box { padding: 1.25rem 1.5rem; }
+.order-box ol li { margin-bottom: .4rem; }
+.order-cta { margin: 1.25rem 0 1rem; max-width: none; }
+@media (min-width: 600px) { .order-cta { justify-content: flex-start; } }
+.btn-x { background: #000; color: #fff; border: 1px solid #fff; }
+.btn-x:hover { color: #fff; }
+.ai-note { color: var(--muted); font-size: .9rem; margin: 0; }
+.btn-paypal { background: #ffc439; color: #111; }
+.btn-paypal:hover { color: #111; }
