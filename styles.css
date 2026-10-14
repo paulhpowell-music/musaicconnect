@@ -206,3 +206,10 @@ p { margin: 0 0 1rem; }
 .faq-item { padding: 1rem 1.25rem; }
 .faq-item summary { cursor: pointer; font-weight: 700; }
 .faq-item p { color: var(--muted); margin: .6rem 0 0; }
+
+/* Lyric Videos */
+.lyric-grid { display: grid; gap: 1.25rem; grid-template-columns: 1fr; }
+@media (min-width: 600px) { .lyric-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 960px) { .lyric-grid { grid-template-columns: repeat(3, 1fr); } }
+.lyric-card { padding: .75rem; display: flex; flex-direction: column; gap: .6rem; }
+.lyric-card h3 { margin: 0 .25rem .25rem; font-size: 1.1rem; }
