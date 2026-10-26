@@ -63,6 +63,7 @@ p { margin: 0 0 1rem; }
 .nav-list .nav-cta:hover { color: #0b0f1a; background: #5eead4; }
 @media (max-width: 520px) {
   .header-inner { justify-content: center; padding-top: .5rem; padding-bottom: .4rem; gap: .25rem; }
+  .nav-list { flex-wrap: wrap; justify-content: center; }
   .nav-list a { padding: .35rem .55rem; font-size: .88rem; }
 }
 
@@ -216,3 +217,23 @@ p { margin: 0 0 1rem; }
 
 .gift-list { margin: 0 0 1.25rem; padding-left: 1.2rem; }
 .gift-list li { margin-bottom: .6rem; }
+
+/* Featured song (home page) */
+.featured-song { padding: 1rem; display: grid; gap: 1.25rem; align-items: center; }
+.featured-cover { width: 100%; max-width: 360px; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 12px; margin: 0 auto; }
+.featured-song-text h3 { font-size: 1.8rem; }
+.featured-song-text .cta-row { margin: 1.25rem 0 .5rem; max-width: none; }
+@media (min-width: 760px) {
+  .featured-song { grid-template-columns: 300px 1fr; padding: 1.25rem; gap: 2rem; }
+  .featured-song .cta-row { justify-content: flex-start; }
+}
+
+/* Stories Behind the Songs */
+.story { padding: 1.25rem; display: grid; gap: 1.25rem; margin-bottom: 1.5rem; }
+.story h2 { font-size: clamp(1.6rem, 4.5vw, 2.1rem); }
+.story-body { max-width: 680px; }
+.story-body p { color: #cfd6e8; font-size: 1.05rem; }
+.story-body blockquote { margin: 0 0 1rem; padding-left: 1rem; border-left: 3px solid var(--pink); color: var(--text); font-style: italic; }
+.story .cta-row { margin: 1.25rem 0 0; max-width: none; }
+@media (min-width: 600px) { .story .cta-row { justify-content: flex-start; } }
+@media (min-width: 900px) { .story { padding: 1.75rem; } }
