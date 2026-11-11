@@ -215,6 +215,10 @@ p { margin: 0 0 1rem; }
 .lyric-card { padding: .75rem; display: flex; flex-direction: column; gap: .6rem; }
 .lyric-card h3 { margin: 0 .25rem .25rem; font-size: 1.1rem; }
 
+.playlist-label { margin: 1.5rem 0 .75rem; color: var(--muted); font-weight: 600; }
+.playlist-row { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .75rem; }
+.playlist-row .btn { padding: .65rem 1.15rem; font-size: .95rem; }
+
 .gift-list { margin: 0 0 1.25rem; padding-left: 1.2rem; }
 .gift-list li { margin-bottom: .6rem; }
 
